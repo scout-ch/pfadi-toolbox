@@ -18,6 +18,7 @@ description: >
   Pfadi Toolbox
 # baseurl: ''
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pfadi-toolbox.ch/
 
 # Build settings
 markdown: kramdown
