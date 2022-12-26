@@ -15,8 +15,8 @@ updates:
       interval: "weekly"
     target-branch: "development"
 
-- package-ecosystem: "docker"
-    directory: "/.vscode"
-    schedule:
-      interval: "weekly"
-    target-branch: "development"
+  - package-ecosystem: "docker"
+      directory: "/.vscode"
+      schedule:
+        interval: "weekly"
+      target-branch: "development"
