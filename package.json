@@ -1,5 +1,8 @@
 {
+  "scripts": {
+    "predeploy": "yarn install --non-interactive"
+  },
   "dependencies": {
-    "bootstrap": "^4.0"
+    "bootstrap": "^4.6"
   }
 }
