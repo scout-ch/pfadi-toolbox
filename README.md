@@ -3,8 +3,6 @@
 ## Development
 
 ```bash
-nvm install node --lts
-yarn install
 bundle install
 bundle exec jekyll serve
 ```

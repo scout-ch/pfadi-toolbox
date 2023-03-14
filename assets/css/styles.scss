@@ -1,84 +1,18 @@
+--- 
 ---
----
 
-@import 'functions';
-
-$white:  #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:  #000 !default;
-
-$grays: (
-  100: $gray-100,
-  200: $gray-200,
-  300: $gray-300,
-  400: $gray-400,
-  500: $gray-500,
-  600: $gray-600,
-  700: $gray-700,
-  800: $gray-800,
-  900: $gray-900
-) !default;
-
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
-
-$colors: (
-  blue: $blue,
-  indigo: $indigo,
-  purple: $purple,
-  pink: $pink,
-  red: $red,
-  orange: $orange,
-  yellow: $yellow,
-  green: $green,
-  teal: $teal,
-  cyan: $cyan,
-  white: $white,
-  gray: $gray-600,
-  gray-dark: $gray-800
-) !default;
-
-
-$theme-colors: (
-  primary: #0098ba,
-  secondary: $gray-600,
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  light: $gray-100,
-  dark: $gray-800
-);
-
-$font-family-sans-serif: -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-family-monospace:  "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif !default;
-
-$headings-font-family: 'Josefin Slab',serif;
-$headings-font-weight:  700;
-
-@import 'bootstrap';
+:root {
+  --primary: #0098ba;
+  --font-family-sans-serif: -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --headings-font-family: 'Josefin Slab', serif;
+  --headings-font-weight: 700;
+}
 
 h1 {
   margin: 4rem 0 2rem 0;
   font-size: 5rem;
   text-align: center;
+  font-family: var(--headings-font-family);
 }
 
 h2 {
@@ -89,6 +23,7 @@ h2 {
   background-size: 100% 100%;
   color: white;
   padding: 3rem;
+  font-family: var(--headings-font-family);
 }
 
 ul.posts {
@@ -96,33 +31,45 @@ ul.posts {
   padding: 0;
 
   >li {
-    border-bottom: 1px solid $gray-300;
+    border-bottom: 1px solid rgb(222, 226, 230);
     padding: 1.5rem 0;
     margin: 1.5rem 0;
 
-    h3, h3>a {
+    h3,
+    h3>a {
       color: black;
       margin: 1rem 0;
-      font-family: $font-family-base;
       text-decoration: none;
     }
   }
 }
 
 section#contact {
-  background: $gray-300;
+  background: rgb(73, 80, 87);
+}
+
+.navbar {
+  .navbar-brand img {
+    height: 40px;
+    margin: -10px 0;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 body {
   overflow-x: hidden;
   padding-top: 60px;
 
-  > section {
+  >section {
     padding: 2rem 0;
   }
 
-  > footer {
-    background: $gray-700;
+  >footer {
+    background: rgb(222, 226, 230);
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -131,7 +78,8 @@ body {
       margin: 0 1.5rem
     }
 
-    a, a:hover {
+    a,
+    a:hover {
       color: white;
     }
 
@@ -140,8 +88,8 @@ body {
     }
   }
 
-  > header {
-    background-image: linear-gradient(#0098ba, #0098ba);
+  >header {
+    background-image: linear-gradient(#0098bade, var(--primary));
   }
 }
 
@@ -149,9 +97,20 @@ p {
   line-height: 1.75;
 }
 
-.navbar-brand img {
-  height:40px; margin: -10px 0;
+a {
+  color: var(--primary);
+  text-decoration: none;
+  background-color: transparent
 }
 
+a:hover {
+  color: #00596e;
+  text-decoration: underline
+}
 
-
+.post {
+  .screenshot {
+    width: 100%;
+    margin: 2em 0;
+  }
+}
