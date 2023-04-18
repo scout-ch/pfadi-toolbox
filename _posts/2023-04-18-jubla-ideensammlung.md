@@ -2,7 +2,7 @@
 title: jubla.netz - Ideensammlung
 category: ideen
 tags: [spielideen, aktivitäten, aktivitätsideen, übung, übungen, nachmittag, lager, programm]
-link: www.jubla.ch/ideen
+link: https://www.jubla.ch/ideen
 screenshot: '/assets/images/jubla-ideensammlung.png'
 author: Jungwacht Blauring Schweiz
 ---
