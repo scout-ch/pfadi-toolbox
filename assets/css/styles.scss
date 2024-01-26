@@ -2,7 +2,8 @@
 ---
 
 :root {
-  --primary: #0098ba;
+  --primary: #521d3a;
+  --primary-light: #8c3c4f;
   --font-family-sans-serif: -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --headings-font-family: 'Josefin Slab', serif;
   --headings-font-weight: 700;
@@ -45,7 +46,7 @@ ul.posts {
 }
 
 section#contact {
-  background: rgb(73, 80, 87);
+  background: #521d3a;
 }
 
 .navbar {
@@ -58,6 +59,11 @@ section#contact {
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
 }
 
 body {
@@ -89,7 +95,7 @@ body {
   }
 
   >header {
-    background-image: linear-gradient(#0098bade, var(--primary));
+    background-image: linear-gradient(#521d3a, var(--primary));
   }
 }
 
@@ -104,7 +110,7 @@ a {
 }
 
 a:hover {
-  color: #00596e;
+  color: var(--primary-light);
   text-decoration: underline
 }
 
